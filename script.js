@@ -107,7 +107,7 @@ gsap.to("#page2 #gsap6", {
       end: "top -100%",
       scrub:2,
       pin:true,
-      markers: true,
+      
     },
   });
 
