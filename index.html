@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Illustrator Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Oxanium:wght@200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-michroma {
+            font-family: "Michroma", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .copyright {
+            filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+        }
+
+        .extra-bold {
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        #mainline3 span {
+            display: inline-block;
+        }
+
+        #earthtext1 span {
+            display: inline-block;
+        }
+        #saturntext1 span
+        {
+            display: inline-block; 
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0">
+    <div id="mainpage" class="relative ">
+        <!-- Hero Section -->
+        <div class="relative h-screen w-full overflow-hidden"> <!-- Change height here -->
+            <img class="absolute inset-0 object-cover w-full h-full" src="vector/Vector.svg" alt="Moon Image">
+
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                <img class="absolute top-0  right-0.5 my-0" src="vector/Vector-1.svg" alt="">
+                <img class="absolute bottom-0 left-[-6vw]" src="vector/Vector-2.svg" alt="">
+                <img class="absolute top-0 right-20" src="vector/Vector-4.svg" alt="">
+                <img class="absolute top-1/2 left-2/4" src="vector/Vector-6.svg" alt="">
+                <img class="absolute top-10 left-[38%]" src="group/Group-1.svg" alt="">
+                <img class="absolute top-0 " src="group/Group.svg" alt="">
+                <!--earth and venus-->
+                <div id="gsap1">
+                    <img class="absolute top-40 left-1/2  lg:top-24  w-16 lg:w-24 lg:h-32" style="right: calc(35rem);"
+                        src="layer/Layer 2-1.svg" alt="">
+                    <img class="absolute left-80 bottom-96" src="layer/Layer 2.svg" alt="">
+                </div>
+                <!-- mars and jupiter-->
+                <div id="gsap2">
+                    <img class="absolute top-40 lg:top-20 right-0 w-28 lg:w-56" src="layer/Layer 2-2.svg" alt="">
+                    <img class="absolute right-0 bottom-0 w-32 lg:w-72" src="layer/Layer 2-3.svg" alt="">
+                </div>
+                <div id="gsap3">
+                    <img class="absolute top-24  w-20 lg:w-36 left-0" src="group/Group-2.svg" alt="">
+                    <img class="absolute top-12 left-0" src="group/Group-3.svg" alt="">
+                    <img class="absolute bottom-24 md:bottom-64 lg:bottom-36  w-40 md:w-48 lg:w-64 left-0 "
+                        src="layer/Layer 2-5.svg" alt="">
+                    <img class="absolute hidden lg:block md:block bottom-0 left-0 " src="layer/Layer 2-4.svg" alt="">
+                </div>
+
+                <img id="gsap4" class="absolute bottom-0 hidden md:block lg:block  " src="layer/Layer 2-6.svg" alt="">
+
+                <!-- setting the navbar  -->
+                <div id="navbar"
+                    class="absolute top-5  left-12 lg:left-36  flex items-center justify-center space-x-40  navbar">
+                    <!-- first box -->
+                    <div class=" flex items-center space-x-4">
+                        <div class="navicon">
+                            <img src="navicon.svg" alt="">
+                        </div>
+                        <p class="text-4xl font-michroma font-semibold text-white">Galactic.io</p>
+                        <i class="ri-menu-line  lg:hidden " style="color: white; "></i>
+
+                    </div>
+
+
+                    <!-- second-box -->
+
+                    <div class=" hidden lg:flex flex items-center space-x-12 text-white  font-medium">
+                        <a href="#" class="text-white hover:text-gray-500">Mercury</a>
+                        <a href="#" class="text-white hover:text-gray-500">Earth</a>
+                        <a href="#" class="text-white hover:text-gray-500">Venus</a>
+                        <a href="#" class="text-white hover:text-gray-500">Mars</a>
+
+                    </div>
+                    <div class="flex text-white">
+                        <img class="copyright" width="20" height="16"
+                            src="https://img.icons8.com/small/16/000000/copyright.png" alt="copyright" />
+                        <p>2023 solarsystemdesign</p>
+                    </div>
+
+
+                </div>
+
+
+                <!-- main hero content -->
+
+                <div id="mainlines"
+                    class="relative top-1/2 left-1/2 -translate-x-[50%]  -translate-y-[50%] flex flex-col  items-center justify-center h-full w-full">
+                    <div
+                        class="absolute  top-1/4 lg:top-44 text-center font-extrabold leading-snug text-white text-2xl md:text-5xl lg:text-7xl text-center font-michroma w-full  max-w-screen-xl mx-auto tracking-tight">
+                        <h1 id="mainline1">Let's Get To Know </h1>
+                        <h1 id="mainline2">Our Solar System </h1>
+                        <h1 id="mainline3">Galaxy</h1>
+                    </div>
+                    <p class="absolute  lg:bottom-72 text-white text-center w-3/5">Embark on a cosmic journey across the
+                        ethereal expanse of the solar system Galaxy and follow the orchestration of the cosmos and the
+                        planets weaving stories of their timeless existence.</p>
+                    <div
+                        class="absolute flex flex-col bg-gradient-to-r from-indigo-600 to-rose-900 items-center justify-center bottom-1/4 lg:bottom-40 text-center text-white w-52 rounded-lg h-20 ">
+                        <div class="font-michroma font-semibold text-xl flex  button ">
+                            learn more ⬇
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sun Section -->
+        <div class="relative h-screen w-full overflow-hidden ">
+            <!-- setting the background images of sun section -->
+            <img class="absolute inset-0 object-cover w-full h-full" src="sun/background.svg" alt="sun Image">
+            <img class="absolute  w-full" src=" sun/sun1.svg" alt="">
+            <img class="absolute w-full h-full bottom-[-90px] left-40" src="group/Group-1.svg" alt="">
+            <img class="absolute w-screen " src="group/Group.svg" alt="">
+            <img class="absolute bottom-36 right-20" src="vector/Vector-6.svg" alt="">
+            <img id="gsap5" class="absolute w-screen lg:top-[-100px]  " src="sun/sun.svg" alt="">
+            <!-- //making the main content of sun page -->
+            <div>
+                <div>
+                    <h1
+                        class="suntext1 bottom-3/4 lg:bottom-96 font-michroma extra-bold text-white absolute left-20 text-7xl">
+                        .sun</h1>
+                    <p class="suntext1 text-white font-medium absolute bottom-96  lg:bottom-64 w-7/12 text-lg left-20">
+                        The Sun is a huge,
+                        glowing ball of hot plasma at the centre of our solar system and provides the vital energy
+                        needed for life on Earth. This energy radiates outward in the form of light and heat, providing
+                        warmth and light to the entire solar system.</p>
+                </div>
+                <div class=" flex space-x-20">
+
+                    <div class="suntext1 flex justify-center items-center space-x-4 border-4 absolute bottom-52 md:bottom-42 lg:bottom-14 left-20 w-80 h-40 rounded-lg"
+                        style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                        <!-- content of the box1  -->
+                        <!-- image div -->
+                        <div>
+                            <img class="" src="sun/diameter.svg" alt="">
+                        </div>
+
+                        <!-- text div -->
+                        <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                            <p class="text-base">Diameter</p>
+                            <p class="text-4xl">870,000</p>
+                            <p class="text-4xl">Miles</p>
+                        </div>
+
+                    </div>
+
+                    <div class="suntext1 flex justify-center items-center space-x-4  border-4 absolute bottom-8 lg:bottom-14 lg:left-96  w-80 h-40 rounded-lg"
+                        style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                        <!-- content of the box2 -->
+                        <!-- img div -->
+                        <div>
+                            <img class="" src="sun/thermometer1.svg" alt="">
+                        </div>
+
+                        <!-- text div -->
+                        <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                            <img src="sun/degree.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- mercury section -->
+        <div id="page2" class="relative h-screen w-full overflow-hidden ">
+
+
+            <img class="absolute inset-0 object-cover w-full h-full" src=" mercury /background.svg" alt="">
+            <img class="absolute w-full h-full bottom-[-250px] right-[-400px]" src="group/Group-1.svg" alt="">
+            <img class="absolute w-screen right-[-200px]" src="group/Group.svg" alt="">
+            <img id="gsap6" class="absolute inset-y-16 h-3/5 left-[-164px]" src="mercury /mercury.svg" alt="">
+
+            <!-- //making the main content of mercury page -->
+            <div>
+                <!-- textportion -->
+                <div class="mercurytext1 ">
+                    <h1 class="top-4 md:top-8 lg:top-20 right-2 md:right-80 lg:right-96 font-michroma extra-bold text-white  md:text-gray-300 lg:text-white absolute text-4xl md:text-5xl lg:text-7xl">1.Mercury</h1>
+                    <p class="top-20 md:top-32 lg:top-56 right-2 md:right-64 lg:right-32 text-white md:text-gray-500   lg:text-white font-normal absolute w-8/12 md:w-6/12 lg:w-6/12 text-lg  ">Mercury is the
+                        closest planet to the Sun and is known for its extreme temperatures and barren, rocky surface.
+                        It is one of the four terrestrial planets in our solar system, characterized by their solid,
+                        rocky composition. </p>
+                </div>
+                <!-- boxes portion div-->
+                <div class="flex space-x-96 absolute  top-96 md:right-[+750px] lg:right-[+860px]">
+                    <!-- box1 div-->
+
+                    <div class="mercurytext1 flex justify-center items-center space-x-4 border-4 absolute  w-80 h-40 rounded-lg"
+                        style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                        <!-- image div -->
+                        <div>
+                            <img class="" src="sun/diameter.svg" alt="">
+                        </div>
+
+                        <!-- text div -->
+                        <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                            <p class="text-base">Diameter</p>
+                            <p class="text-4xl">3,032</p>
+                            <p class="text-4xl">Miles</p>
+                        </div>
+                    </div>
+                    <!-- box2 -->
+                    <div class="mercurytext1 flex justify-center items-center space-x-4  border-4 absolute w-80 h-40 rounded-lg"
+                        style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                        <!-- content of the box2 -->
+                        <!-- img div -->
+                        <div>
+                            <img class="" src="sun/thermometer1.svg" alt="">
+                        </div>
+
+                        <!-- text div -->
+                        <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                            <img src="mercury /degree.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- box-3 -->
+                    <div class="mercurytext1 flex justify-center items-center space-x-4  border-4 absolute w-80 h-40 my-8 left-[-380px] rounded-lg top-40"
+                        style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                        <!-- content of the box2 -->
+                        <!-- img div -->
+                        <div>
+                            <img class="" src="mercury /bluethermo.svg" alt="">
+                        </div>
+
+                        <!-- text div -->
+                        <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                            <img src="mercury /degree2.svg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- venus section -->
+
+        <div class="relative h-screen w-full overflow-hidden ">
+            <img class="absolute inset-0 object-cover w-full h-full" src="vector/Vector.svg" alt="Moon Image">
+            <img class="absolute w-full h-full left-0" src="group/Group-1.svg" alt="">
+            <img class="absolute w-screen right-[-100px]" src="group/Group.svg" alt="">
+            <img class="gsap6 absolute bottom-0 right-0" src="venus/venusback.svg" alt="Moon Image">
+
+            <img class="gsap6 absolute bottom-0 right-0 " src="venus/venus.svg" alt="Moon Image">
+            <!--making the main content of venus-->
+            <div class="">
+                <!--textportion-->
+                <div class="venustext1">
+                    <h1 class="top-20 md:left-16 lg:left-24 font-michroma extra-bold text-white absolute  text-7xl">2.Venus</h1>
+                    <p class=" top-52 left-24 text-white font-normal absolute  w-5/12 text-lg  ">Venus is often referred
+                        to as
+                        Earth's "sister planet" due to its similar size and composition, but it stands out with its
+                        extremely inhospitable environment. </p>
+                </div>
+                <!--box-1-->
+                <div class="venustext1 top-[+500px] md:top-[+500px] lg:top-80 left-24 flex justify-center items-center space-x-4 border-4 absolute  w-80 h-40 rounded-lg"
+                    style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                    <!-- image div -->
+                    <div>
+                        <img class="" src="sun/diameter.svg" alt="">
+                    </div>
+
+                    <!-- text div -->
+                    <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                        <p class="text-base">Diameter</p>
+                        <p class="text-4xl">7521</p>
+                        <p class="text-4xl">Miles</p>
+                    </div>
+
+                </div>
+
+                <!--box-2-->
+                <div class="venustext1 bottom-16 md:bottom-40 lg:bottom-40 left-24 flex justify-center items-center space-x-8 border-4 absolute  w-80 h-40 rounded-lg"
+                    style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                    <!-- img div -->
+                    <div>
+                        <img class="" src="sun/thermometer1.svg" alt="">
+                    </div>
+
+                    <!-- text div -->
+                    <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                        <img src="venus/degree.svg" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <!--Earth section-->
+        <div class="relative flex items-center justify-center h-screen w-full overflow-hidden">
+            <img class="absolute inset-0 object-cover w-full h-full" src="Earth/background.svg" alt=" ">
+            <img class="absolute w-full h-full left-0" src="group/Group-1.svg" alt="">
+            <img class="absolute w-screen right-[-100px]" src="group/Group.svg" alt="">
+            <img class="absolute bottom-0" src="Earth/earthback.svg" alt=" ">
+            <img class="absolute bottom-0" src="Earth/earth.svg" alt=" ">
+            <img class="earthrocket absolute bottom-0 left-0 bottom-64" src="Earth/rocket.svg" alt=" ">
+            <img class="absolute top-60 right-80 bottom-64" src="Earth/vector.svg" alt=" ">
+            <!--main content of earth-->
+            <div>
+                <h1 class="earthtext1 top-10 left-24 font-michroma extra-bold text-white absolute  text-7xl">3.Earth
+                </h1>
+                <p class=" top-36 left-24 text-white font-normal absolute  w-7/12 text-lg  ">Earth is the third planet
+                    from the Sun and the only known planet to support life. Earth is the only planet known to harbor
+                    life. It's a diverse and dynamic world with a wide range of ecosystems, climates, and geological
+                    features </p>
+            </div>
+
+            <!--Moon-->
+            <div>
+                <h1
+                    class="overflow-hidden moontext top-64 right-[+540px] font-michroma extra-bold text-white absolute  text-4xl">
+                    Moon planet
+                </h1>
+                <p class="moontext text-right top-80 right-[+540px] text-white font-normal absolute  w-6/12 text-lg  ">
+                    Earth has
+                    one natural satellite, the Moon, which plays a role in stabilizing the planet's rotation and tides.
+                    The Moon's gravitational pull causes ocean tides to rise and fall. </p>
+
+            </div>
+
+            <!--box-->
+            <div class="top-16 right-20 flex justify-center items-center space-x-4 border-4 absolute  w-80 h-40 rounded-lg"
+                style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                <!-- image div -->
+                <div>
+                    <img class="" src="sun/diameter.svg" alt="">
+                </div>
+
+                <!-- text div -->
+                <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                    <p class="text-base">Diameter</p>
+                    <p class="text-4xl">7,918</p>
+                    <p class="text-4xl">Miles</p>
+                </div>
+            </div>
+        </div>
+        <!--mars section-->
+        <div class="relative h-screen w-full overflow-hidden ">
+            <img class="absolute inset-0 object-cover w-full h-full" src="vector/Vector.svg" alt="Moon Image">
+            <img class="absolute w-full h-full left-0" src="group/Group-1.svg" alt="">
+            <img class="absolute w-screen right-[-100px]" src="group/Group.svg" alt="">
+            <img class="mars absolute bottom-0" src="Mars/marsback.svg" alt="">
+            <img class="mars absolute bottom-0" src="Mars/mars.svg" alt="">
+            <img class="absolute top-[+450px] left-[+525px]" src="Mars/vector.svg" alt="">
+            <!--mars main context-->
+
+            <!--mars text area-->
+            <div class="">
+                <h1 class="marstext top-20 left-24 font-michroma extra-bold text-white absolute  text-7xl"> 4.Mars</h1>
+                <p class="marstext top-52 left-24 text-white font-normal absolute  w-6/12 text-lg  ">Mars, often referred to as
+                    the "Red Planet," is the fourth planet from the Sun and has captivated human imagination for
+                    centuries with its reddish appearance and potential for hosting life. </p>
+            </div>
+            <div class="">
+                <h1 class="marstext2 bottom-72 left-[+600px] font-michroma extra-bold text-white absolute  text-4xl"> Martian
+                    Moons</h1>
+                <p class="marstext2 bottom-48 left-[+600px] text-white font-normal absolute  w-3/12 text-lg  ">Mars has two small
+                    moons, Phobos and Deimos, which are irregularly shaped and thought to be captured asteroids.</p>
+            </div>
+
+            <!--mars boxes-->
+            <div class="">
+                <!-- box1 div-->
+                <div class="marsboxes top-20 right-20 flex justify-center items-center space-x-4 border-4 absolute  w-80 h-40 rounded-lg"
+                    style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                    <!-- image div -->
+                    <div>
+                        <img class="" src="sun/diameter.svg" alt="">
+                    </div>
+
+                    <!-- text div -->
+                    <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                        <p class="text-base">Diameter</p>
+                        <p class="text-4xl">4,212</p>
+                        <p class="text-4xl">Miles</p>
+                    </div>
+                </div>
+                <!-- box2 -->
+                <div class="marsboxes top-64 right-20 flex justify-center items-center space-x-4  border-4 absolute w-80 my-8 h-40 rounded-lg"
+                    style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                    <!-- content of the box2 -->
+                    <!-- img div -->
+                    <div>
+                        <img class="" src="sun/thermometer1.svg" alt="">
+                    </div>
+
+                    <!-- text div -->
+                    <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                        <img src="mercury /degree.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- box-3 -->
+                <div class="marsboxes flex justify-center items-center space-x-4  border-4 absolute w-80 h-40 my-8  rounded-lg bottom-36 right-20"
+                    style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                    <!-- content of the box2 -->
+                    <!-- img div -->
+                    <div>
+                        <img class="" src="mercury /bluethermo.svg" alt="">
+                    </div>
+
+                    <!-- text div -->
+                    <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                        <img src="mercury /degree2.svg" alt="">
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+        </div>
+        <!--jupitersection-->
+        <div class="relative h-screen w-full overflow-hidden ">
+            <img class="absolute inset-0 object-cover w-full h-full" src="vector/Vector.svg" alt="Moon Image">
+            <img class="absolute" src="saturn/background1.svg" alt="">
+            <img class="gsap7 absolute top-0 right-0" src="jupiter/jupiterback.svg" alt="Moon Image">
+
+            <img class="gsap7 absolute top-0 right-0 " src="jupiter/jupiter.svg" alt="Moon Image">
+            <!--making the main content of venus-->
+            <div class="">
+                <!--textportion-->
+                <div class="">
+                    <h1 class="jupitertext top-20 left-24 font-michroma extra-bold text-white absolute  text-7xl">5.Jupiter</h1>
+                    <p class="jupitertext top-52 left-24 text-white font-normal absolute  w-5/12 text-lg  ">Jupiter, the largest
+                        planet in our solar system, is a gas giant known for its immense size, powerful storms, and
+                        numerous moons. </p>
+                </div>
+                <!--box-1-->
+                <div class="jupitertext top-80 left-24 flex justify-center items-center space-x-4 border-4 absolute  w-80 h-40 rounded-lg"
+                    style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                    <!-- image div -->
+                    <div>
+                        <img class="" src="sun/diameter.svg" alt="">
+                    </div>
+
+                    <!-- text div -->
+                    <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                        <p class="text-base">Diameter</p>
+                        <p class="text-4xl">86.881</p>
+                        <p class="text-4xl">Miles</p>
+                    </div>
+
+                </div>
+
+                <!--box-2-->
+                <div class="jupitertext bottom-40 left-24 flex justify-center items-center space-x-8 border-4 absolute  w-80 h-40 rounded-lg"
+                    style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                    <!-- img div -->
+                    <div>
+                        <img class="" src="mercury /bluethermo.svg" alt="">
+                    </div>
+
+                    <!-- text div -->
+                    <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                        <img src="jupiter/degree.svg" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <!--saturn-->
+
+        <div class="relative h-screen w-full overflow-hidden ">
+            <img class="absolute inset-0 object-cover w-full h-full" src="vector/Vector.svg" alt="Moon Image">
+            <img class="absolute w-full h-full left-0" src="group/Group-1.svg" alt="">
+            <img class="absolute w-screen right-[-100px]" src="group/Group.svg" alt="">
+
+            <img class="saturnring absolute bottom-0 left-0 " src="saturn/saturn.svg" alt="Moon Image">
+            <h3 class="saturnring absolute text-white text-2xl font-semibold  top-56 left-40">Titan</h3>
+            <!--making the main content of Saturn-->
+            <div class="">
+                <!--textportion-->
+                <div  >
+                    <h1 class="saturntext1 top-20 right-24 text-right font-michroma extra-bold text-white absolute  text-7xl">6.Saturn</h1>
+                    <p class="saturntext2 top-52 right-24 text-right text-white font-normal absolute  w-6/12 text-lg  ">Saturn,
+                        often referred to as the "Ringed Planet," is known for its stunning system of rings that
+                        encircle the planet's equator. It's the sixth planet from the Sun and is one of the most
+                        visually distinctive objects in our solar system, with more than 80 known satellites. </p>
+                </div>
+                <!--box-1-->
+                <div class="saturntext2 top-80 right-24 flex justify-center items-center space-x-4 border-4 absolute  w-80 h-40 rounded-lg"
+                    style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                    <!-- image div -->
+                    <div>
+                        <img class="" src="sun/diameter.svg" alt="">
+                    </div>
+
+                    <!-- text div -->
+                    <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                        <p class="text-base">Diameter</p>
+                        <p class="text-4xl">74.898</p>
+                        <p class="text-4xl">Miles</p>
+                    </div>
+
+                </div>
+
+                <!--box-2-->
+                <div class="saturntext2 bottom-40 right-24 flex justify-center items-center space-x-8 border-4 absolute  w-80 h-40 rounded-lg"
+                    style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                    <!-- img div -->
+                    <div>
+                        <img class="" src="mercury /bluethermo.svg" alt="">
+                    </div>
+
+                    <!-- text div -->
+                    <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                        <img src="saturn/degree.svg" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <!--Uranus-->
+        <div class="relative flex items-center justify-center h-screen w-full overflow-hidden">
+            <img class="absolute inset-0 object-cover w-full h-full" src="Earth/background.svg" alt=" ">
+            <img class="absolute w-full h-full left-0" src="group/Group-1.svg" alt="">
+            <img class="absolute w-screen right-[-100px]" src="group/Group.svg" alt="">
+            <img class="uranus absolute bottom-0 right-0" src="uranus/uranusback.svg" alt=" ">
+            <img class="uranus absolute bottom-0 right-2" src="uranus/uranus.svg" alt=" ">
+            <img class="absolute top-60 right-80 bottom-64" src="Earth/vector.svg" alt=" ">
+            <!--main content of Uranus-->
+            <div>
+                <h1 class="uranustext1 top-10 left-24 font-michroma extra-bold text-white absolute  text-7xl">7.Uranus
+                </h1>
+                <p class="uranustext1 top-36 left-24 text-white font-normal absolute  w-4/12 text-lg  ">Uranus, often referred to
+                    as the "Ice Giant," is a unique and mysterious planet in our solar system. It stands out due to its
+                    distinct blue-green color and its unusual rotation axis.</p>
+            </div>
+
+
+            <!--box 1-->
+            <div class="uranustext2 top-16 right-96 right-[520px] flex justify-center items-center space-x-4 border-4 absolute  w-80 h-40 rounded-lg"
+                style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                <!-- image div -->
+                <div>
+                    <img class="" src="sun/diameter.svg" alt="">
+                </div>
+
+                <!-- text div -->
+                <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                    <p class="text-base">Diameter</p>
+                    <p class="text-4xl">31,518</p>
+                    <p class="text-4xl">Miles</p>
+                </div>
+            </div>
+            <!--box-2-->
+            <div class="uranustext3 top-16 right-44 flex justify-center items-center space-x-8 border-4 absolute  w-80 h-40 rounded-lg"
+                style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                <!-- img div -->
+                <div>
+                    <img class="" src="mercury /bluethermo.svg" alt="">
+                </div>
+
+                <!-- text div -->
+                <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                    <img src="uranus/degree.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--neptune-->
+        <div class="relative h-screen w-full overflow-hidden ">
+            <img class="absolute inset-0 object-cover w-full h-full" src="vector/Vector.svg" alt="Moon Image">
+            <img class="absolute w-full h-full left-0" src="group/Group-1.svg" alt="">
+            <img class="absolute w-screen right-[-100px]" src="group/Group.svg" alt="">
+
+            <img class="neptune1 absolute  left-0 bottom-0 " src="neptune/neptune.svg" alt="Moon Image">
+
+            <!--making the main content of neptune-->
+            <!--textportion-->
+            <div class=" flex items-center justify-center  ">
+                <h1 class="neptunetext1 top-10 font-michroma extra-bold text-white absolute  text-7xl">8.Neptune</h1>
+                <p class="neptunetext2 top-32 text-center text-white font-normal absolute  w-9/12 text-lg  ">Neptune, often called
+                    the "Blue Giant," is the eighth and farthest planet from the Sun in our solar system. It is a gas
+                    giant known for its striking blue color and turbulent atmosphere.</p>
+            </div>
+
+            <div class="overflow-hidden flex flex-col justify-center items-center  ">
+
+
+                <!--box-1-->
+                <div class="neptunetext3 top-56 left-96  flex justify-center items-center space-x-4 border-4 absolute  w-80 h-40 rounded-lg"
+                    style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                    <!-- image div -->
+                    <div>
+                        <img class="" src="sun/diameter.svg" alt="">
+                    </div>
+
+                    <!-- text div -->
+                    <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                        <p class="text-base">Diameter</p>
+                        <p class="text-4xl">30,775</p>
+                        <p class="text-4xl">Miles</p>
+                    </div>
+
+                </div>
+
+                <!--box-2-->
+                <div class="neptunetext3 top-56 right-96 flex justify-center items-center space-x-8 border-4 absolute  w-80 h-40 rounded-lg"
+                    style="background: linear-gradient(to right, #100030, #3e014d);border: 4px solid #3e014d">
+                    <!-- img div -->
+                    <div>
+                        <img class="" src="mercury /bluethermo.svg" alt="">
+                    </div>
+
+                    <!-- text div -->
+                    <div class="font-michroma font-semibold gap-2 text-white flex flex-col">
+                        <img src="neptune/degree.svg" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <!--footer-->
+        <div class="relative lg:h-[583px] w-full overflow-hidden ">
+            <img class="absolute inset-0 object-cover w-full h-full" src="vector/Vector.svg" alt="Moon Image">
+            <img class="absolute w-full h-full left-0" src="group/Group-1.svg" alt="">
+            <img class="absolute w-screen right-[-100px]" src="group/Group.svg" alt="">
+
+            <img class=" neptune2 absolute absolute left-0 bottom-0  " src="footer/neptune.svg" alt="Moon Image">
+            <!--textportion-->
+            <div class=" absolute inset-0 flex items-center justify-center  text-white">
+                <div
+                    class=" text-center py-10 w-11/12 rounded-3xl h-96 bg-black flex flex-col items-center justify-center">
+                    <h1 class="text-4xl lg:text-4xl font-michroma font-black mb-4">Join The Education Comunity</h1>
+                    <p class="text-lg text-center mx-auto w-8/12">Join the Education Community today and be part of a
+                        movement that's
+                        transforming minds and shaping tomorrows.</p>
+                    <!--capsule 1-->
+                    <div class="w-5/12 mt-4 h-1/4 bg-white rounded-full text-center flex  items-center">
+                        <form class="ml-4 ">
+                            <input class="text-black" type=" text" placeholder="write your email" name="" id="">
+                        </form>
+                        <!--capsule 2-->
+                        <div
+                            class="w-4/12 h-4/5 ml-40 right-4 bg-gradient-to-r flex justify-center items-center  from-indigo-600 to-rose-900 rounded-full">
+                            <h1 class=" font-michroma font-black">Subscribe</h1>
+                            <!--arrow in circle-->
+                            <div class=" w-12 h-12 bg-white ml-4 flex justify-center items-center  rounded-full">
+                                <img class="w-8" src="footer/arrow.svg" alt="">
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <!-- navbar -->
+                    <div id="navbar"
+                    class=" mt-14     flex items-center justify-center space-x-36 ">
+                    <!-- first box -->
+                    <div class=" flex items-center space-x-4">
+                        <div class="navicon">
+                            <img src="navicon.svg" alt="">
+                        </div>
+                        <p class="text-4xl font-michroma font-semibold text-white">Galactic.io</p>
+                        <i class="ri-menu-line  lg:hidden " style="color: white; "></i>
+
+                    </div>
+
+
+                    <!-- second-box -->
+
+                    <div class=" hidden lg:flex flex items-center space-x-12 text-white  font-medium">
+                        <a href="#" class="text-white hover:text-gray-500">Mercury</a>
+                        <a href="#" class="text-white hover:text-gray-500">Earth</a>
+                        <a href="#" class="text-white hover:text-gray-500">Venus</a>
+                        <a href="#" class="text-white hover:text-gray-500">Mars</a>
+
+                    </div>
+                    <div class="flex text-white">
+                        <img class="copyright" width="20" height="16"
+                            src="https://img.icons8.com/small/16/000000/copyright.png" alt="copyright" />
+                        <p>2023 solarsystemdesign</p>
+                    </div>
+
+
+                </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
